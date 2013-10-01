@@ -22,11 +22,9 @@
 
         <!-- Add your site or application content here -->
         <%= yield %>
-
-
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<%= javascript_include_tag "jquery" %>')</script>
+        <script>window.jQuery || document.write('<%=j javascript_include_tag "jquery" %>')</script>
         <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
