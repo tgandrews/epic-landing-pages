@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'account creation' do
-	it 'allows user to create an account' do
+  it 'allows user to create an account' do
     visit root_path
     click 'Create account'
 
@@ -13,5 +13,5 @@ describe 'account creation' do
     click_button 'Create account'
 
     expect(page).to have_content('Signed up successfully')
-	end	
+  end	
 end
