@@ -72,6 +72,8 @@ GEM
     guard-rspec (4.2.3)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    haml (4.0.4)
+      tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
     i18n (0.6.9)
@@ -185,6 +187,7 @@ DEPENDENCIES
   guard
   guard-livereload
   guard-rspec
+  haml
   jquery-rails
   mysql2
   rails (= 4.0.2)
