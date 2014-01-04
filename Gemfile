@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'unicorn'
+gem 'haml'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
