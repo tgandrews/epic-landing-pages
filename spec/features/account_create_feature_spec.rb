@@ -9,6 +9,7 @@ describe 'account creation' do
     fill_in 'Email', with: 'test_user@gmail.com'
     fill_in 'Password', with: 'complexPassword'
     fill_in 'Password Confirmation', with: 'complexPassword'
+    fill_in 'Landing Page URL', with: 'landingpage.com'
 
     click_button 'Create account'
 
