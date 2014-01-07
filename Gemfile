@@ -10,7 +10,10 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'unicorn'
+gem 'unicorn-rails'
+
 gem 'haml'
+gem 'anjlab-bootstrap-rails', '~> 3.0.0', :require => 'bootstrap-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
