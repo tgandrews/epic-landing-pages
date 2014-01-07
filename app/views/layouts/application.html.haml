@@ -10,10 +10,17 @@
       %nav.navbar.navbar-default
         .navbar-header
           = link_to "Epic Landing Pages", root_path, class: "navbar-brand"
+        .collapse.navbar-collapse
+          - sign_in_out_classes = 'btn btn-default navbar-btn navbar-right' 
+          - if user_signed_in?
+            = link_to 'Sign out', destroy_user_session_path, method: 'delete', class: sign_in_out_classes
+          - else
+            = link_to 'Sign in', new_user_session_path, class: sign_in_out_classes
 
     .container
       - flash.each do |name, msg|
-        .flash{ id: "flash_#{name}" }= msg
+        .flash{ id: "flash_#{name}" }
+          = msg
 
       .row
         = yield
