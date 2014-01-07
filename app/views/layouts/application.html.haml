@@ -18,9 +18,7 @@
             = link_to 'Sign in', new_user_session_path, class: sign_in_out_classes
 
     .container
-      - flash.each do |name, msg|
-        .flash{ id: "flash_#{name}" }
-          = msg
+      = flash_message if show_layout_flash?
 
       .row
         = yield
