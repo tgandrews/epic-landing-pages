@@ -2,6 +2,7 @@ class LandingPagesController < ApplicationController
 
   def new
     @landing_page = LandingPage.new
+    @landing_page.build_owner
   end
 
   def create
@@ -15,6 +16,6 @@ class LandingPagesController < ApplicationController
 
   private
     def landing_page_params
-      params.require(:landing_page).permit(:url)
+      params.require(:landing_page).permit(:url, owner_attributes: [:name, :email, :password, :password_confirmation])
     end
 end

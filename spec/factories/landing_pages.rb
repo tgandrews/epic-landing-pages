@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :landing_page do
-    url "MyString"
-    owner_id 1
+    sequence(:url) { |n| "test#{n}.com"}
+    association :owner, factory: :user
   end
 end
