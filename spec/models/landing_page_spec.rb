@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe LandingPage do
   describe "validations" do
+    it { should validate_presence_of :owner }
+
     it { should validate_presence_of :url }
     it { should validate_uniqueness_of :url }
 
@@ -24,6 +26,6 @@ describe LandingPage do
   end
 
   describe "associations" do
-    it 'should have an owner'
+    it { should belong_to :owner }
   end
 end

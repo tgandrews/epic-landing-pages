@@ -15,6 +15,8 @@ gem 'unicorn-rails'
 gem 'haml'
 gem 'anjlab-bootstrap-rails', '~> 3.0.0', :require => 'bootstrap-rails'
 
+gem 'devise', '~> 3.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
